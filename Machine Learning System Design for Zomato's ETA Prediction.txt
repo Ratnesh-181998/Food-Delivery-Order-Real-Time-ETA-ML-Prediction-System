@@ -1,0 +1,50 @@
+Machine Learning System Design for Zomato's ETA Prediction
+
+Welcome to the detailed revision notes covering the end-to-end design of a machine learning system for predicting Estimated Time of Arrival (ETA) on a food delivery platform like Zomato. This comprehensive guide will provide insights into the complete lifecycle from data inception to deployment, along with the technology stack involved, specifically focusing on the utilization of AWS services.
+
+Introduction
+The main focus of this session was to design a machine learning system that predicts ETA for food deliveries on the Zomato app. This needs to incorporate real-time prediction capabilities that adapt to various dynamic conditions such as traffic variances, restaurant prep times, and rider locations【7:0†source】.
+
+Key System Concepts
+ETA Prediction: Providing users with a real-time estimate of when their food will arrive.
+Dynamic Updates: Continuously updating the ETA based on real-time variables.
+Integration: Seamless communication between multiple system components such as restaurants, delivery riders, and customers .
+System Design Steps
+Functional and Non-Functional Requirements
+Functional Requirements:
+
+Accuracy in ETA predictions.
+Real-time updates for delivery status.
+Integration with restaurant and rider systems .
+Non-Functional Requirements:
+
+Scalability to handle a vast number of users.
+Low latency for real-time data processing.
+High availability and reliability .
+Data Sources and Management
+Orders data: Includes order ID, customer ID, restaurant ID, payment details, delivery address, and any special instructions. This data is generally structured but might include semi-structured elements for complex instructions .
+Restaurant data: Contains details like restaurant ID, name, address (latitude and longitude), types of cuisine, average prep times, etc. .
+Rider and customer data: Encompasses rider IDs, current locations, availability, and customer order history .
+Data Processing Pipeline
+ETL Process:
+
+Extract, Transform, Load (ETL): Using AWS Glue for handling data transformations and data cataloging. Feature scaling through normalization and standardization is performed during this phase .
+Encoding Techniques: Restaurants' high cardinality data requires embeddings to capture relationships between different restaurant categories using neural networks .
+Feature Engineering:
+
+Calculate distances using the Haversine formula due to the Earth's curvature providing a more precise measurement than standard Euclidean or Manhattan distances .
+Time-based feature extraction to account for varying prep times and delivery conditions .
+Model Training and Deployment
+Model Types: Begin with linear regression and proceed to more advanced models like XGBoost, LightGBM, or neural networks for capturing complex relationships .
+AWS SageMaker: Utilized for model training, inference, and endpoint management. Provides a comprehensive environment to deploy machine learning models as REST APIs .
+Real-Time Predictions
+AWS Lambda: Used to create functions that handle incoming API requests, preprocess data, invoke SageMaker endpoints, and process predictions for real-time updates in the app .
+Key Technology Stack
+AWS Services: Critical components include AWS S3 for data storage, AWS Glue for ETL, AWS SageMaker for model training, and AWS Lambda for executing serverless functions .
+Data Management: Emphasizes the importance of structured, semi-structured, and unstructured data handling through appropriate AWS data services .
+Conclusion
+The integration of machine learning for real-time ETA prediction in a high-demand environment like Zomato involves several sophisticated steps. From data handling to model deployment and system monitoring, each aspect requires careful consideration and a robust tech stack—principally utilizing AWS cloud services—to ensure seamless prediction and customer satisfaction.
+
+This comprehensive design underscores the importance of a well-structured workflow, making it possible to handle the volatilities inherent in food delivery logistics whilst maintaining high standards of service delivery.
+
+This documentation should serve as a valuable resource for revising the concepts discussed in class and understanding the real-world application of machine learning in industry contexts.

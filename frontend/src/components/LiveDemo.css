@@ -1,0 +1,120 @@
+.live-demo {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.demo-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.demo-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-md);
+}
+
+.demo-description {
+    font-size: 1.125rem;
+    color: var(--gray-600);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.demo-section {
+    min-height: 400px;
+}
+
+/* How It Works */
+.how-it-works {
+    margin-top: var(--spacing-2xl);
+    padding: var(--spacing-2xl);
+    background: white;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    color: var(--gray-900);
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.step-card {
+    position: relative;
+    padding: var(--spacing-xl);
+    background: linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 100%);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--gray-200);
+    transition: all var(--transition-base);
+}
+
+.step-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.step-number {
+    position: absolute;
+    top: -12px;
+    left: var(--spacing-lg);
+    width: 32px;
+    height: 32px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.875rem;
+    box-shadow: var(--shadow-md);
+}
+
+.step-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+.step-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+}
+
+.step-description {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .demo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+}

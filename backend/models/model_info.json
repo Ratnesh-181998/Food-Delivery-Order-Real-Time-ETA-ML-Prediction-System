@@ -1,0 +1,34 @@
+{
+  "feature_columns": [
+    "restaurant_to_customer_km",
+    "manhattan_distance_km",
+    "hour",
+    "day_of_week",
+    "is_weekend",
+    "is_breakfast_rush",
+    "is_lunch_rush",
+    "is_dinner_rush",
+    "is_late_night",
+    "hour_sin",
+    "hour_cos",
+    "day_sin",
+    "day_cos",
+    "restaurant_avg_prep_time",
+    "restaurant_rating",
+    "expected_traffic_score",
+    "traffic_density_normalized",
+    "weather_delay_factor",
+    "is_raining",
+    "distance_traffic_interaction",
+    "distance_weather_interaction",
+    "prep_time_rush_interaction"
+  ],
+  "model_type": "XGBoost",
+  "train_date": "2025-11-26 21:06:21",
+  "metrics": {
+    "test_mae": 8.017916281821979,
+    "test_rmse": 9.639099779591307,
+    "test_r2": 0.9612000731792966,
+    "test_mape": 8.544752190874322
+  }
+}

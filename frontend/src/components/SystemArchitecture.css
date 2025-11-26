@@ -1,0 +1,258 @@
+.system-architecture {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.architecture-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.architecture-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-md);
+}
+
+.architecture-description {
+    font-size: 1.125rem;
+    color: var(--gray-600);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* AWS Services */
+.aws-services-section {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.aws-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.aws-service-card {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    border: 3px solid;
+    text-align: center;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-sm);
+}
+
+.aws-service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto var(--spacing-md);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+}
+
+.service-name {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--gray-900);
+}
+
+/* Architecture Layers */
+.architecture-layers {
+    display: grid;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.layer-card {
+    background: white;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    transition: all var(--transition-base);
+}
+
+.layer-card:hover {
+    box-shadow: var(--shadow-xl);
+    transform: translateX(4px);
+}
+
+.layer-header {
+    background: linear-gradient(135deg, var(--gray-800) 0%, var(--gray-900) 100%);
+    color: white;
+    padding: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.layer-icon {
+    font-size: 1.5rem;
+}
+
+.layer-title {
+    flex: 1;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.layer-number {
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.layer-components {
+    padding: var(--spacing-lg);
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.component-item {
+    padding: var(--spacing-md);
+    background: var(--gray-50);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--primary);
+    transition: all var(--transition-base);
+}
+
+.component-item:hover {
+    background: var(--primary-light);
+    border-left-width: 6px;
+}
+
+.component-name {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 4px;
+}
+
+.component-desc {
+    font-size: 0.75rem;
+    color: var(--gray-600);
+}
+
+/* Data Flow */
+.data-flow-section {
+    background: white;
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.flow-diagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+    margin-top: var(--spacing-lg);
+}
+
+.flow-step {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.flow-box {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    font-weight: 600;
+    white-space: nowrap;
+    box-shadow: var(--shadow-md);
+}
+
+.flow-arrow {
+    font-size: 1.5rem;
+    color: var(--gray-400);
+    font-weight: 700;
+}
+
+/* Key Features */
+.key-features-section {
+    background: white;
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.feature-card {
+    text-align: center;
+    padding: var(--spacing-xl);
+    background: var(--gray-50);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-base);
+}
+
+.feature-card:hover {
+    background: var(--primary-light);
+    transform: translateY(-4px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.feature-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-sm);
+}
+
+.feature-desc {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .flow-diagram {
+        flex-direction: column;
+    }
+
+    .flow-arrow {
+        transform: rotate(90deg);
+    }
+
+    .aws-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
