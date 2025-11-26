@@ -104,10 +104,17 @@ The model was trained on a synthetic dataset mimicking real-world delivery scena
 ## 📸 Screenshots
 
 ### Live Demo
-![Live Demo](project_showcase_ui/live_demo.png)
+<img width="973" height="1476" alt="image" src="https://github.com/user-attachments/assets/e786ebc6-b625-4a09-93ad-52ab25dedfb5" />
 
 ### System Architecture
-![System Architecture](project_showcase_ui/system_architecture.png)
+<img width="977" height="1473" alt="image" src="https://github.com/user-attachments/assets/afd5dc33-7522-4f05-9d52-63cadf0e2c3d" />
+<img width="938" height="1167" alt="image" src="https://github.com/user-attachments/assets/7ec967be-c1be-49d0-898c-b7d336970a87" />
+
+## 📊 Model Performance
+Comprehensive evaluation of ML models and system performance metrics
+<img width="980" height="1451" alt="image" src="https://github.com/user-attachments/assets/4572068d-23ac-4b26-91d0-4823a61c4341" />
+<img width="945" height="1432" alt="image" src="https://github.com/user-attachments/assets/3904bbf3-15eb-49a4-b308-24b8c40dee17" />
+
 
 ## 🤝 Contact
 
